@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="utf-8">
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/estilo.css">
+	 
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+
+     <!-- https://getbootstrap.com.br/docs/4.1/components/forms/? -->
+     <!-- https://getbootstrap.com.br/docs/4.1/components/forms/?#custom-forms -->
+
+     <title>Formulário HTML5</title>
+</head>
+
+<body>
+     <div class="container">
+          <div id="titulo">
+               <h1> Cálculo Idade </h1> <br>
+          </div>
+          <form method="get" action="index.php" id="valores" autocomplete="off">
+               <fieldset class="border p-2">
+                    <legend class="w-auto">Formulário</legend>
+
+                    <div class="form-group">
+                         <label for="txtDono"> Nome do dono: </label>
+                         <input class="form-control" type="text" id="txtDono" name="txtDono" maxlength="50"
+                              required />
+                    </div>
+                    <div class="form-group">
+                         <label for="txtCao"> Nome do cão: </label>
+                         <input class="form-control" type="text" id="txtCao" name="txtCao" maxlength="50" required />
+                    </div>
+                    <div class="form-group">
+                         <label for="txtIdade"> Idade do cão: </label>
+                         <input class="form-control" type="number" id="txtIdade" name="txtIdade" min="0" max="100" step="any" required />
+                    </div>
+                   <div class="form-group">
+                         <label>Peso do cachorro:</label><br>
+                         <div class="form-check form-check-inline">   
+                              <input class="form-check-input" type="radio" id="txtPequeno" name="txtPeso" value="9" required>
+                              <label class="form-check-label" for="txtPequeno">Até 9 kg</label><br>
+                         </div>
+                         <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="txtMedio" name="txtPeso" value="23">
+                              <label class="form-check-label" for="txtMedio">De 10 a 23 kg</label><br>
+                         </div>
+                         <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="txtGrande" name="txtPeso" value="24">
+                              <label class="form-check-label" for="txtGrande">Acima de 24 kg</label>
+                         </div>
+                    </div>           
+                    <br>
+                    <div>
+                         <button class="btn btn-primary" type="submit">Enviar</button>
+                         <button class="btn btn-secondary" type="reset">Limpar</button>
+                    </div><br>
+                </fieldset>
+            </form>
+     </div>
+        <!--
+               Colunas do grid (telas)
+               a classe .col-xs-* definem o grid para dispositivos com largura de tela inferior à 768px.
+               A classe .col-sm-* define para telas superiores à 768px.
+               A classe .col-md-* define para telas superiores à 970px e a classe .col-lg-* para telas superiores à 1200px.
+
+          -->
+
+</body>
+
+</html>

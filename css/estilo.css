@@ -1,0 +1,13 @@
+body {
+    background-color: 	cadetblue;
+}
+
+.container{
+    width: 80%;
+    left: 10%;
+}
+
+#titulo{
+    padding-top: 2%;
+    text-align: center;   
+}
